@@ -7,9 +7,9 @@ import { Total } from './backend-code';
 $(document).ready(function() {
   $("form#Calculator").submit(function() {
     event.preventDefault();
-    var userName = ($("input#userName").val());
-    var userAge = ($("#userAge").val());
-    var planet= $("#planet").val();
+    let userName = ($("input#userName").val());
+    let userAge = ($("#userAge").val());
+    let planet= $("#planet").val();
     // var Earth = ($("input#userAge").val());
     // var Mercury = ($("input#userAge *.24").val());
 
@@ -21,8 +21,10 @@ $(document).ready(function() {
 
        // create object Total pass in
        // Total.getAge()
-       let total = new Total(userName,userAge,planet);
-      $("#yourAge").text(total.getPlanet());
+       let total = new Total(userName,userAge,planet,expectancy);
+      $("#results").append(total.getPlanet());
+      let expectancy = new Total (userName,userAge,planet,expectancy);
+        $("#results").append(total.getExpectancyDate());
 
      });
    });
