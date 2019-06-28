@@ -10,8 +10,8 @@ $(document).ready(function() {
     var userName = ($("input#userName").val());
     var userAge = ($("#userAge").val());
     var planet= $("#planet").val();
-
-
+    var Earth = ($("input#userAge").val());
+    var Mercury = ($("input#userAge *.24").val());
 
     $("#results").show("#results");
        $("#text1").text(userName);
@@ -21,7 +21,7 @@ $(document).ready(function() {
        // create object Total pass in
        // Total.getAge()
        let total = new Total(userName,userAge,planet);
-      $("#text2").text(total.getAge());
+      $("#text2").text(total.getPlanet());
      });
    });
 
