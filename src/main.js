@@ -2,8 +2,31 @@ import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Constructor-Name } from './backend-code';
+import { Total } from './backend-code';
 
-$(function() {
+$(document).ready(function() {
+  $("form#Calculator").submit(function() {
+    event.preventDefault();
+    var userName = ($("input#userName").val());
+    var userAge = ($("#userAge").val());
+    var planet= $("#planet").val();
 
-});
+
+
+    $("#results").show("#results");
+       $("#text1").text(userName);
+    $("#text2").text(userAge);
+       $("#text3").text(planet);
+
+       // create object Total pass in
+       // Total.getAge()
+       let total = new Total(userName,userAge,planet);
+      $("#text2").text(total.getAge());
+     });
+   });
+
+
+//get input: 23, mars
+//send that info to backend
+//send back results
+//display result

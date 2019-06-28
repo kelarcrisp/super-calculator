@@ -1,11 +1,13 @@
-// import { XXX } from './../src/backend-code.js';
-//
-// describe('XXX', function() {
-//
-//   it('should ...', function() {
-//     expect(triangle.side1).toEqual(3);
-//     expect(triangle.side2).toEqual(4);
-//     expect(triangle.side3).not.toEqual(6);
-//   });
-// 
-// })
+import { Total } from './../src/backend-code.js';
+
+
+describe('total', function() {
+
+  it('should return your age in Earth years', function() {
+    var test = new Total("kelar",23,"venus");
+    expect(test.name).toEqual("kelar");
+    expect(test.age).toEqual(23);
+    expect(test.planet).toEqual("venus");
+  });
+
+})

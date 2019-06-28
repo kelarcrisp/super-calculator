@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project Name</title>
+    <title>Super Calculator</title>
   </head>
   <body>
+<div class ="container">
+  <div class = "jumbotron">
+      <h1>THE SUPER CALCULATOR</h1>
+      <h3>Use this calculator to find your age and life expectancy on each planet!</h3>
+  </div>
+   <form id="Calculator">
+  <div class="form-group">
+           <h2 label for="userName">Your Name:</h2></label>
+           <input id="userName" class="form-control" type="text">
+         </div>
+         <div class="form-group">
+           <h2 label for="userAge">Your Age: </h2></label>
+           <input id="userAge" class="form-control" type="text">
+
+         </div>
+           <h2 label for="planet">Which planet </h2></label>
+         <select class="form-control" id="planet" onchange="run()"> >
+
+              <option value= "Earth">Earth</option>
+              <option value= "Mercury">Mercury</option>
+              <option value= "Venus">Venus</option>
+              <option value= "Mars">Mars</option>
+              <option value= "Jupiter">Jupiter</option>
+
+          </select>
+          <br>
+      <button type="submit" class="default-btn">Go!</button>
+          </div>
+    </form>
+
+    <h2 ul id="results">Your age and life expectancy on planet:
+        <li id="text1"></li>
+        <li id="text2"></li>
+        <li id="text3"></li>
+
+
+      </h2>
+    </ul>
+</div>
+
+
 
   </body>
+
+
 </html>
