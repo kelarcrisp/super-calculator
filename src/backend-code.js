@@ -1,14 +1,15 @@
 //the class for all backend
 
 export class Total{
-  constructor(name, age, planet){
-    this.name = name
-    this.age = age
-    this.planet = planet
+  constructor(name, age, planet,){
+    this.name = name;
+    this.age = age;
+    this.planet = planet;
+
   }
 
   getPlanet(){
-    debugger;
+    
     if(this.planet == "Earth"){
       return this.age;
     }else if(this.planet == "Mercury"){
@@ -23,6 +24,11 @@ export class Total{
 
 
 
+    // mercuryExpectancy() {
+    //   const mercuryYear = 0.24;
+    //   return parseFloat((this.age / mercuryYear).toFixed(2));
 
           }
+
+
         }
