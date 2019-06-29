@@ -8,7 +8,7 @@
 
 
 
-<<<<<<< HEAD
+
 ### Specs       
 
 | **The application must allow input of users age:**  | input: 34|output: 34 |
