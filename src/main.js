@@ -13,24 +13,17 @@ $(document).ready(function() {
 
 
     $("#results").show("#results");
-       $("#yourName").text("Hi " + userName);
+    $("#yourName").text("Hi " + userName);
     // $("#yourAge").text("Your age is " + userAge);
-       $("#yourPlanet").text("You're on planet "+ planet);
-        // $("#yourExpectancy").text("Your life expectancy is " + expectancy );
-
-       // create object Total pass in
-       // Total.getAge()
-       let total = new Total(userName,userAge,planet,expectancy);
-      $("#yourAge").text(total.getPlanet());
-
-      let expectancy = new Total (userName,userAge,planet,expectancy);
-        $("#yourExpectancy").text(total.getExpectancyDate());
-
-     });
-   });
+    $("#yourPlanet").text("You're on planet "+ planet);
+    // $("#yourExpectancy").text("Your life expectancy is " + expectancy );
 
 
-//get input: 23, mars
-//send that info to backend
-//send back results
-//display result
+    let total = new Total(userName,userAge,planet,expectancy);
+    $("#yourAge").text(total.getPlanet());
+
+    let expectancy = new Total (userName,userAge,planet,expectancy);
+    $("#yourExpectancy").text(total.getExpectancyDate());
+
+  });
+});

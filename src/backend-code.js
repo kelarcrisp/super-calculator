@@ -24,33 +24,33 @@ export class Total{
     }
   }
 
-    getExpectancyDate(){
-      // debugger;
-      const averageLifeSpan = 75;
+  getExpectancyDate(){
+    // debugger;
+    const averageLifeSpan = 75;
 
-      if(this.planet === "Earth"){
-        let yearsLeft =  averageLifeSpan - this.age;
-        return yearsLeft;
+    if(this.planet === "Earth"){
+      let yearsLeft =  averageLifeSpan - this.age;
+      return yearsLeft;
 
-      }else if (this.planet === "Mercury"){
-        let yearsLeft =  averageLifeSpan - this.age/2;
-        return yearsLeft;
+    }else if (this.planet === "Mercury"){
+      let yearsLeft =  averageLifeSpan - this.age/2;
+      return yearsLeft;
 
-        }else if (this.planet === "Venus"){
-          let yearsLeft =  averageLifeSpan - this.age/3;
-          return yearsLeft;
+    }else if (this.planet === "Venus"){
+      let yearsLeft =  averageLifeSpan - this.age/3;
+      return yearsLeft;
 
-          }else if (this.planet === "Mars"){
-            let yearsLeft =  averageLifeSpan - this.age/4;
-            return yearsLeft;
+    }else if (this.planet === "Mars"){
+      let yearsLeft =  averageLifeSpan - this.age/4;
+      return yearsLeft;
 
-          }else if (this.planet === "Jupiter"){
-              let yearsLeft =  averageLifeSpan - this.age/5;
+    }else if (this.planet === "Jupiter"){
+      let yearsLeft =  averageLifeSpan - this.age/5;
 
-          }
-            return yearsLeft;
+    }
+    return yearsLeft;
 
 
-              }
+  }
 
-            }
+}
