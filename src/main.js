@@ -10,21 +10,21 @@ $(document).ready(function() {
     let userName = ($("input#userName").val());
     let userAge = ($("#userAge").val());
     let planet= $("#planet").val();
-    // var Earth = ($("input#userAge").val());
-    // var Mercury = ($("input#userAge *.24").val());
+
 
     $("#results").show("#results");
-       $("#yourName").text(userName);
-    $("#yourAge").text(userAge);
-       $("#yourPlanet").text(planet);
-        $("#yourExpectancy").text(planet);
+       $("#yourName").text("Hi " + userName);
+    // $("#yourAge").text("Your age is " + userAge);
+       $("#yourPlanet").text("You're on planet "+ planet);
+        // $("#yourExpectancy").text("Your life expectancy is " + expectancy );
 
        // create object Total pass in
        // Total.getAge()
        let total = new Total(userName,userAge,planet,expectancy);
-      $("#results").append(total.getPlanet());
+      $("#yourAge").text(total.getPlanet());
+
       let expectancy = new Total (userName,userAge,planet,expectancy);
-        $("#results").append(total.getExpectancyDate());
+        $("#yourExpectancy").text(total.getExpectancyDate());
 
      });
    });
