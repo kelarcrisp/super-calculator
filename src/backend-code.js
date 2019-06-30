@@ -32,43 +32,25 @@ export class Total{
         let yearsLeft =  averageLifeSpan - this.age;
         return yearsLeft;
 
-        // if(yearsLeft === 0){
-        //   return "YOU ARE DEAD";
-        // }
-
       }else if (this.planet === "Mercury"){
         let yearsLeft =  averageLifeSpan - this.age/2;
         return yearsLeft;
-          // if(yearsLeft === 0) {
-          //   return "YOU ARE DEAD";
-          // }
 
         }else if (this.planet === "Venus"){
           let yearsLeft =  averageLifeSpan - this.age/3;
           return yearsLeft;
-            // if(yearsLeft === 0) {
-            //   return "YOU ARE DEAD";
-            // }
 
           }else if (this.planet === "Mars"){
             let yearsLeft =  averageLifeSpan - this.age/4;
             return yearsLeft;
-              // if(yearsLeft === 0) {
-              //   return "YOU ARE DEAD";
-              // }
 
-            }else if (this.planet === "Jupiter"){
+          }else if (this.planet === "Jupiter"){
               let yearsLeft =  averageLifeSpan - this.age/5;
 
-}
+          }
             return yearsLeft;
-                // if(yearsLeft === 0) {
-                //   return "YOU ARE DEAD";
-                //
-                //
-                // }
+
 
               }
 
             }
-          
