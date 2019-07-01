@@ -18,7 +18,7 @@ export class Total{
     }else if(this.planet == "Venus"){
       return " your age is " +this.age *.62 ;
     }else if(this.planet == "Mars"){
-      return " your age is  " +this.age *1.88  ;
+      return " your age is "+parseInt(this.age *1.88)  ;
     }else if(this.planet == "Jupiter"){
       return " your age is " +this.age *11.86 ;
     }
