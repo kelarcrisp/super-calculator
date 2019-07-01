@@ -1,11 +1,11 @@
 //the class for all backend
 
 export class Total{
-  constructor(name, age, planet, expectancy){
+  constructor(name, age, planet){
     this.name = name;
     this.age = age;
     this.planet = planet;
-    this.expectancy = expectancy;
+
   }
 
 
@@ -33,22 +33,23 @@ export class Total{
       return yearsLeft;
 
     }else if (this.planet === "Mercury"){
-      let yearsLeft =  averageLifeSpan - this.age/2;
-      return yearsLeft;
+      let yearsLeft = (averageLifeSpan - this.age)/2;
+      return parseInt(yearsLeft);
 
     }else if (this.planet === "Venus"){
-      let yearsLeft =  averageLifeSpan - this.age/3;
-      return yearsLeft;
+      let yearsLeft =  (averageLifeSpan - this.age)/3;
+      return parseInt(yearsLeft);
 
     }else if (this.planet === "Mars"){
-      let yearsLeft =  averageLifeSpan - this.age/4;
-      return yearsLeft;
+      let yearsLeft =  (averageLifeSpan - this.age)/4;
+      return parseInt(yearsLeft);
 
     }else if (this.planet === "Jupiter"){
-      let yearsLeft =  averageLifeSpan - this.age/5;
+      let yearsLeft =  (averageLifeSpan - this.age)/5;
 
+      return parseInt(yearsLeft);
     }
-    return yearsLeft;
+    return parseInt(yearsLeft);
 
 
   }

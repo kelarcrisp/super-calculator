@@ -51,6 +51,39 @@ it("should test if Jupiter is calculated correctly", function(){
 
   expect(test).toEqual(" your age is 272.78");
 
+});
+
+  it("should test to see your life expectancy on Mercury", function(){
+    let planet = "Mercury"
+    let expec = new Total(name, age, planet, expectancy);
+    expec = expec.getExpectancyDate()
+
+    expect(expec).toEqual(26);
+});
+
+it("should test to see your life expectancy on Venus", function(){
+  let planet = "Venus"
+  let expec = new Total(name, age, planet);
+  console.log(expec)
+  expec = expec.getExpectancyDate()
+
+  expect(expec).toEqual(17);
+});
+
+it("should test to see your life expectancy on Mars", function(){
+  let planet = "Mars"
+  let expec = new Total(name, age, planet, expectancy);
+  expec = expec.getExpectancyDate()
+
+  expect(expec).toEqual(13);
+});
+//
+it("should test to see your life expectancy on Jupiter", function(){
+  let planet = "Jupiter"
+  let expec = new Total(name, age, planet, expectancy);
+  expec = expec.getExpectancyDate()
+
+  expect(expec).toEqual(10);
 
 });
 });
