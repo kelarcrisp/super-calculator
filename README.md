@@ -14,10 +14,10 @@
 | :-------------     |
 | **The application must allow input of users age:**  | input: 34|output: 34 |
 | **This application will return users age on Earth.**   |input: 34| output: 34 |
-| **This application will return users age on mercury.** (userInputAge *.24)   | input: 34|output: 8.16|
-| **This application will return users age on Venus. (userInput *.62)**   | input: 34|output: 21.08 |
-| **This application will return users age on Mars. (userInputAge * 1.88)**   | input: 34 | output: 63.92  |
-| **This application will return users age on Jupiter. (userInputAge *11.86)**   | input: 34| output: 34 |
+| **This application will return users age on mercury.** (userInputAge .*24)   | input: 34|output: 8.16|
+| **This application will return users age on Venus.** (userInput *.62)  | input: 34|output: 21.08 |
+| **This application will return users age on Mars.** (userInputAge * 1.88)   | input: 34 | output: 63.92  |
+| **This application will return users age on Jupiter.** (userInputAge *11.86)  | input: 34| output: 34 |
 | |
 | **This application will return users life expectancy on Earth.** (userInputAge/2)   | input:  34|output: 17|
 | **This application will return users life expectancy on Mercury.** (userInputAge/3)  | input: 34|output: 11.3|
