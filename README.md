@@ -19,7 +19,6 @@
 | **This application will return users age on Mars. (userInputAge * 1.88)**   | input: 34 | output: 63.92  |
 | **This application will return users age on Jupiter. (userInputAge *11.86)**   | input: 34| output: 34 |
 | Spec |
-| :-------------     |
 | **This application will return users life expectancy on Earth.** (userInputAge/2)   | input:  34|output: 17|
 | **This application will return users life expectancy on Mercury.** (userInputAge/3)  | input: 34|output: 11.3|
 | **This application will return users life expectancy on Venus.** (userInputAge/4)   | input: 34|output: 8.5|
